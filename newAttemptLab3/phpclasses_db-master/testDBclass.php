@@ -31,13 +31,14 @@ if (!$result) {
 {
   
   print $page->getTopSection();
-   print "<body>";
+   
   
   
  
   //This foreach loop will work. However I just need to tweek it a bit to make it output the data 
-  print "<table style = 'border: 2px solid black'>";
-  print '<h1>Data from Bookinfo table <h1>';
+ 
+  print '<h1>Data from Bookinfo table </h1>';
+   print "<table style = 'border: 2px solid black'>";
   
   print "<tr style = 'border: 2px solid black' >
 			<th style= 'width: 175px'> Author </th>
@@ -56,7 +57,7 @@ if (!$result) {
 	  
  }
   print "</table>";
-  print "</body>";
+  
 
 print $page->getBottomSection();
 }
